@@ -35,6 +35,9 @@ public class Solution {
         int len = A.length;
         int[] right_one = new int[len];
         int is_one = 0;
+        if (A[len-1] == 1) {
+            right_one[len - 1] = 1;
+        }
         for (int j = len - 2; j >= 0; j--) {
             if (A[j] == 1) {
                 is_one = 1;
